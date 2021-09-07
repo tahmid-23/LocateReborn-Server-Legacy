@@ -1,0 +1,41 @@
+<html>
+	<head>
+		<title>Locate Reborn</title>
+    <link rel="icon" type="image/png" href="monocle_cat.png">
+    <link rel="stylesheet" href="styles.css">
+    <script src="bugtracker.js"></script>
+    <meta name="og:title" content="Locate Reborn">
+    <meta name="og:description" content="Locate Reborn Bug Tracker">
+    <meta name="og:image" content="https://locate-reborn.glitch.me/monocle_cat.png">
+    <meta name="theme-color" content="#FFD700">
+	</head>
+	<body onload="loadBugs()">
+		<div>
+			<h1>Locate Reborn Bug Tracker</h1>
+			<h3>The bugs we are working on and their statuses are listed below!</h3>
+		</div>
+		<div>
+			<table id="sheet0" class="sheet0 gridlines">
+				<col class="col0"/>
+				<col class="col1"/>
+				<col class="col2"/>
+				<tbody>
+					<tr class="row0">
+						<td>Date Submitted</td>
+						<td>Description</td>
+						<td>Current Status</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+    <span class="inline">
+      <button onclick="location.href = 'https://locate-reborn.glitch.me/'">Home</button>
+      <input id="resolved" type="checkbox" name="resolved" onchange="toggleResolved()" checked>
+      <label for="resolved">Hide resolved bugs</label>
+    </span>
+		<div>
+			<h3>Notice a bug not on the list? Please report it here: </h3>
+			<a class="bug" href="bug.html">Bug Report Form</a>
+		</div>
+	</body>
+</html>

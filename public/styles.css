@@ -1,0 +1,150 @@
+html {
+	font-family: Calibri, Arial, Helvetica, sans-serif;
+	font-size: 11pt;
+	background-color: white
+}
+p {
+  margin: 0em
+}
+table {
+	border-collapse: collapse;
+	page-break-after: always
+}
+table:not(#sheet0) tr:nth-of-type(1), table:not(#sheet0) td:nth-of-type(1) {
+  font-weight: bold;
+  text-align: center
+}
+td, th {
+	border: 1px solid black
+}
+td {
+  padding-left: 0.25em;
+  padding-right: 0.25em;
+}
+h1 {
+  margin-bottom: 0em
+}
+ul {
+  margin-top: 0em
+}
+a:not(.bug) {
+  color: inherit;
+  text-decoration: none
+}
+.inline {
+  display: flex;
+  align-items: center
+}
+.sheet0 {
+  table-layout: fixed;
+  width: 50%
+}
+.sheet0 td {
+  word-wrap: break-word
+}
+[type="checkbox"] {
+  margin-bottom: 0.2em
+}
+#filter-text {
+  margin-right: 0.25em
+}
+#filter-type {
+  margin-left: 0.25em
+}
+
+/*Single Day Electives*/
+.A, .B, .C, .D, .E {
+  background-color: aquamarine
+}
+/*Monday, Thursday Electives*/
+[class~="A,D"] {
+  background-color: mediumturquoise
+}
+/*Tuesday, Friday Electives*/
+[class~="B,E"] {
+  background-color: chartreuse
+}
+/*Math Classes*/ 
+.analysis, .algebra, .calculus, .advmathanalysis, .advmathanalysisii, .precalc_discrete, .math, .calc, .alg_dif, .statistics, .data.structures {
+  background-color: peru
+}
+/*English Classes*/
+.amer.lit, .literature_language, .world.lit {
+  background-color: lightcoral
+}
+/*History Classes*/
+.history, .hist, .government, .psychology {
+  background-color: darkseagreen
+}
+/*Phys Ed Classes*/
+[class^="~PE"], [class^="~Fitness"], [class^="~Driver"], [class^="~Health"], [class^="~Dance Fitness"] {
+  background-color: thistle;
+}
+/*Language Classes*/
+.francais, .espanol, .mandarin {
+  background-color: mediumorchid
+}
+/*Lunch Classes*/
+[class^="~Lunch"] {
+  background-color: goldenrod
+}
+/*Physics Classes*/
+.physics {
+  background-color: orange
+}
+/*Bio Classes*/
+.biology, .env.systems {
+  background-color: springgreen
+}
+/*Chem Classes*/
+.chemistry, .chemical {
+  background-color: steelblue
+}
+/*Comp Sci Classes*/
+.comp.sci, .computer.science, .capstone_cs {
+  background-color: silver
+}
+/*Engineering Classes*/
+.electrical.eng, .materials_tolerances, .makerspace_program, .electronics, .eng.capstone, .makerspace {
+  background-color: darkkhaki
+}
+/*Culinary Classes*/
+.cul, .hospitality, .hospt_cul, .hotel {
+  background-color: sandybrown
+}
+/*Med Classes*/
+.pharmacology, .neuroscience, .epidemiology, .biotechnology, .anatomy {
+  background-color: pink
+}
+/*Art Classes*/
+.acting, .visual.art, .art.history, .music.theory, .digital.keyboarding, .musicianship .directing, .voice, .conducting, .media.sem, .music.synthesis, .theatre.history, .design_prod, .graphic.comm, [class^="~Theatre Production"] {
+  background-color: plum
+}
+/*Business Classes*/
+.management_marketing, .business, .economics, .economics_hl, .knowledge {
+  background-color: yellow
+}
+/*Guidance Seminar*/
+[class^="~Guidance Seminar"], [class^="~Senior"] {
+  background-color: gainsboro
+}
+/*Lab / Research Classes*/
+.lab.\30\39, .lab.\31\30, .research, .res.lab {
+  background-color: firebrick
+}
+/*Elective Mon-Thu*/
+.elective1 {
+  
+}
+/* Elective Wed*/
+.elective2 {
+  
+}
+/*Elective Tue-Fri*/
+.elective3 {
+  
+}
+.hidden {
+  background-color: transparent;
+  font-size: 0
+}
